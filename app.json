@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test",
+    
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color":"#27B8B8",
+    "font-size": "12px",
+    "selectedColor":"#0037E6",
+    "borderStyle": "white",
+    "backgroundColor": "#FFF", 
+    "list": [{
+      "pagePath": "pages/test/test",
+      "text": "首页",
+      "iconPath": "img/首页.png",
+      "selectedIconPath": "img/首页.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "img/我的.png",
+      "selectedIconPath": "img/我的.png"
+    }
+   ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "银行保管箱",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

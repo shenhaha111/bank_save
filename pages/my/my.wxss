@@ -1,0 +1,154 @@
+/* pages/my/my.wxss */
+.container {
+    width: 99%;
+    height: 100%;
+    background-color: #F4F4F4;
+    margin-top: -90px;
+
+}
+
+.box1 {
+    width: 95%;
+    height: 160px;
+    background: linear-gradient(134deg, #4473FF 0%, #1436FE 100%);
+    opacity: 1;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.innerbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.head {
+    width: 42px;
+    height: 42px;
+    opacity: 1;
+}
+
+.min {
+    width: 16px;
+    height: 16px;
+    color: #FFFFFF;
+}
+
+.number {
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: -120px;
+}
+
+text {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.time {
+    width: 105px;
+    height: 40px;
+    background: #F1B20C;
+    opacity: 1;
+    border-radius: 20px 0px 0px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.management {
+    width: 68px;
+    height: 26px;
+    border: 1px solid #FFFFFF;
+    opacity: 0.8;
+    border-radius: 13px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.box2 {
+    width: 95%;
+    height: 86px;
+    background: rgba(255, 255, 255, 0.39);
+    opacity: 1;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item image {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.item text {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 20px;
+    color: #666666;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.box3 {
+    width: 95%;
+    height: 101px;
+    background: rgba(255, 255, 255, 0.39);
+    opacity: 1;
+    border-radius: 6px;
+    margin-bottom: 00px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    
+}
+.pic {
+    width: 18px;
+    height: 18px;
+}
+.angle {
+    width: 16px;
+    height: 16px;
+    margin-left: 210px;
+}
+.info text {
+    font-size: 14px;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 20px;
+color: #666666;
+margin-left: 10px;
+}
+.info {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}

@@ -1,0 +1,41 @@
+<!--pages/test/test.wxml-->
+<view class="wrap">
+    <image class="banner" src="../../img/banner@2x.png"></image>
+    <view class="headarea">
+        <view class="bodyarea">
+            <image class="pic" src="../../img/chaxun.png"></image>
+            <text>数据查询</text>
+        </view>
+        <view class="bodyarea">
+            <image class="pic" src="../../img/shanglian.png"></image>
+            <text>上链</text>
+        </view>
+        <view class="bodyarea">
+            <image class="pic" src="../../img/yuyue.png"></image>
+            <text>预约</text>
+        </view>
+        <view class="bodyarea">
+            <image class="pic" src="../../img/jiaofei.png"></image>
+            <text>缴费</text>
+        </view>
+    </view>
+    <view class="centerWrap">
+        <view class="titlewrap">
+            <view class="test">
+            </view>
+            <view class="title">
+                中心介绍
+            </view>
+        </view>
+
+        <view class="msgWrap">
+            <text>
+                基于区块链的银行软件管理系统为满足用户在线办理保管箱租用业务需求。
+            </text>
+            <image src="../../img/center.png"></image>
+            <text>
+                实现业务数据、系统用户操作记录上链、管理，采用了主流移动端开发技术框架uni-app与轻量级数据存储MySQL数据库，实现了管理业务自动化。
+            </text>
+        </view>
+    </view>
+</view>

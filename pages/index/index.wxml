@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+    <image class="logo" src="../../img/box.png" alt="">
+    </image>
+    <view class="box" src="">
+        <view class="welcome">欢迎注册保管箱</view>
+        <view class="innerbox">
+            <view class="loginbox">
+                <view class="inputbox">
+                    <image class="account" style="width: 20px;height: 20px " src="../../img/account.png" alt=""></image>
+                    <input placeholder="请输入您的手机号" bindinput='phoneInp' type='number' />
+                </view>
+                <view class="inputbox">
+                    <image class="account" style="width: 20px;height: 20px " src="../../img/password.png" alt=""></image>
+                    <input placeholder="请输入您的密码" bindinput='passWordInp' type='password' />
+                </view>
+            </view>
+            <button class="btn"  bindtap='loginBtnClick' loading="{{false}}">登录</button>
+            <view class='forget' bindtap='forgetPwdClick' style='display:inline-block;text-align:right;margin-left: 15px;'>
+                忘记密码
+            </view>
+        </view>
+    </view>
+    <view class="loginByWechat">
+        <view class="weixinwrap">
+            <view class="bor"></view>
+            <view class="bortext">
+                第三方登录
+            </view>
+            <view class="bor"></view>
+        </view>
+    </view>
+    <view class="weichat">
+        <image class="wxLogin" src="../../img/weixin@2x.png">
+        </image>
+    </view>
+</view>
