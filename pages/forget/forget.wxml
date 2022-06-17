@@ -1,0 +1,26 @@
+<!--pages/forget/forget.wxml-->
+<!--index.wxml-->
+<view class="container">
+    <image class="logo" src="../../img/box.png" alt="">
+    </image>
+    <view class="box" src="">
+        <view class="welcome">重置密码</view>
+        <view class="innerbox">
+            <view class="loginbox">
+                <view class="inputbox">
+                    <image class="account" style="width: 20px;height: 20px " src="../../img/account.png" alt=""></image>
+                    <input placeholder="请输入您的手机号" bindinput='phoneInp' type='number' />
+                </view>
+                <view class="inputbox">
+                    <image class="account" style="width: 20px;height: 20px " src="../../img/yanzheng.png" alt=""></image>
+                    <input placeholder="请输入验证码" bindinput='passWordInp' type='password' />
+                    <view class="yanzheng">获取验证码</view>
+                </view>
+            </view>
+            <button class="btn" bindtap='loginBtnClick' loading="{{false}}">重置密码</button>
+        </view>
+    </view>
+    <view class=".loginByWechat">
+        <view class="weixinwrap"></view>
+    </view>
+</view>

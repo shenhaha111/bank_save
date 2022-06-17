@@ -1,0 +1,40 @@
+<!--pages/management/management.wxml-->
+<view class="box1">
+    <view class="txt">授权他人用箱</view>
+    <view class="body-view">
+        <switch color="#115eeb" checked="{{switch1Checked}}" bindchange="switch1Change" />
+    </view>
+</view>
+<view wx:if="{{switch1Checked==true}}">
+    <view class="tips"><text>开启后，可授权他人开箱，续租，退箱</text></view>
+    <view class="box2">
+        <view class="add" bindtap="onadd">
+            <image src="../../img/addperson.png"></image>
+            <view class="person">添加用箱人</view>
+        </view>
+        <view class="add" bindtap="onadd">
+            <image src="../../img/addperson.png"></image>
+            <view class="person">添加用箱人</view>
+        </view>
+        <view class="add" style="border-bottom: 2px solid rgb(238, 231, 231);" bindtap="onadd">
+            <image src="../../img/addperson.png"></image>
+            <view class="person">添加用箱人</view>
+        </view>
+    </view>
+    <view class="tips"></view>
+    <view class="box3">
+        <view class="power" bindtap="onpower">
+            <view class="powertext" style="margin-left: 15px;">用箱权限</view>
+            <view class="power1">
+                <picker class="powertext" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">{{array[index]}}</picker>
+                <image src="../../img/angle-right.png" style="width: 15px;height: 15px;"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{switch1Checked==false}}">
+    <view class="tips"><text>开启后，可授权他人开箱，续租，退箱</text></view>
+</view>
+<button bindtap="btnclick" style="color: white;background-color: blue;font-weight: 400;width: 200px; border-radius: 20px;margin-top: 80px;">
+    完成
+</button>

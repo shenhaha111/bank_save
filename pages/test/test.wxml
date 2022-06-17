@@ -2,19 +2,19 @@
 <view class="wrap">
     <image class="banner" src="../../img/banner@2x.png"></image>
     <view class="headarea">
-        <view class="bodyarea">
+        <view class="bodyarea" bindtap="onquery">
             <image class="pic" src="../../img/chaxun.png"></image>
             <text>数据查询</text>
         </view>
-        <view class="bodyarea">
+        <view class="bodyarea" bindtap="onchain">
             <image class="pic" src="../../img/shanglian.png"></image>
             <text>上链</text>
         </view>
-        <view class="bodyarea">
+        <view class="bodyarea" bindtap="onbook">
             <image class="pic" src="../../img/yuyue.png"></image>
             <text>预约</text>
         </view>
-        <view class="bodyarea">
+        <view class="bodyarea" bindtap="onfee">
             <image class="pic" src="../../img/jiaofei.png"></image>
             <text>缴费</text>
         </view>

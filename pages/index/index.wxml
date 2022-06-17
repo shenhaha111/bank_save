@@ -15,7 +15,7 @@
                     <input placeholder="请输入您的密码" bindinput='passWordInp' type='password' />
                 </view>
             </view>
-            <button class="btn"  bindtap='loginBtnClick' loading="{{false}}">登录</button>
+            <button class="btn" bindtap='loginBtnClick' loading="{{false}}">登录</button>
             <view class='forget' bindtap='forgetPwdClick' style='display:inline-block;text-align:right;margin-left: 15px;'>
                 忘记密码
             </view>

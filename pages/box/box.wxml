@@ -1,0 +1,72 @@
+<!--pages/box/box.wxml-->
+<view class="box1">
+    <view class="btn-box">
+        <view class="reset1{{choose1?'':'-notchoosed'}}" bindtap="choose1BoxBtnClick" hover-class="btn-click" style="color: gray;">C1102</view>
+        <view class="reset2{{choose2?'':'-notchoosed'}}" bindtap="choose2BoxBtnClick" hover-class="btn-click" style="color: gray; margin-left: 30px;">B0028</view>
+        <view class="add-box" bindtap="onadd">添加箱体</view>
+    </view>
+    <view wx:if="{{choose1 == true}}">
+        <view class="area">
+            <view class="area-box1">
+                <view class="image-area">
+                    <image src="../../img/case.png"></image>
+                </view>
+                <view class="number">C0012</view>
+                <view class="edit" bindtap="onedit">编辑</view>
+            </view>
+            <view class="area-box2">
+                <view class="txt">箱子规格 50*30*60mmA</view>
+                <view class="txt">安徽省合肥市高新区</view>
+                <view class="txt">2022-06-24</view>
+                <view class="txt">6228*************255</view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{choose2 == true}}">
+        <view class="area">
+            <view class="area-box1">
+                <view class="image-area">
+                    <image src="../../img/case.png"></image>
+                </view>
+                <view class="number">B0028</view>
+                <view class="edit">编辑</view>
+            </view>
+            <view class="area-box2">
+                <view class="txt">箱子规格 50*50*60mmA</view>
+                <view class="txt">安徽省合肥市高新区</view>
+                <view class="txt">2022-06-24</view>
+                <view class="txt">6228*************255</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="service">我的服务</view>
+<view class="box2">
+    <view class="headarea">
+        <view class="bodyarea" bindtap="onmanagement">
+            <image class="pic" src="../../img/boxshouquan.png"></image>
+            <text>授权管理</text>
+        </view>
+        <view class="bodyarea" bindtap="onrent">
+            <image class="pic" src="../../img/boxxuzu.png"></image>
+            <text>续租</text>
+        </view>
+        <view class="bodyarea" bindtap="onbook">
+            <image class="pic" src="../../img/boxyuyue.png"></image>
+            <text>开箱预约</text>
+        </view>
+        <view class="bodyarea" bindtap="onrequst">
+            <image class="pic" src="../../img/boxshengqing.png"></image>
+            <text>换箱申请</text>
+        </view>
+    </view>
+</view>
+<view class="service">其他</view>
+<view class="box3">
+    <view class="headarea">
+        <view class="bodyarea" bindtap="onabout">
+            <image class="pic" src="../../img/boxxieyi.png"></image>
+            <text>相关协议</text>
+        </view>
+    </view>
+</view>

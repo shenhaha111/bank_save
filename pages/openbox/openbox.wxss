@@ -1,0 +1,20 @@
+/* pages/openbox/openbox.wxss */
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+image {
+    width: 290px;
+    height: 120px;
+}
+
+.move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    color: gray;
+}

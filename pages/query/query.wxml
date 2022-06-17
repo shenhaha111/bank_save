@@ -1,0 +1,36 @@
+<!--pages/query/query.wxml-->
+<view class="search-bar">
+    <view class="search-box">
+        <input type="text" placeholder="数据搜索" confirm-type='search' value="{{inputValue}}" bindinput='query' />
+    </view>
+    <image src="../../img/sousuo.png" bindtap='cancelHandler'></image>
+</view>
+<view class="table">
+    <view class="tr">
+        <view class="th">箱型</view>
+        <view class="th">箱号</view>
+        <view class="th">是否上链</view>
+        <view class="th">时间</view>
+        <view class="th">状态</view>
+    </view>
+    <block wx:for="{{list}}" wx:key="item">
+        <view class="tr">
+            <view class="td">{{item.id}}</view>
+            <view class="td">{{item.number}}</view>
+            <view class="td">{{item.chain}}</view>
+            <view class="td">{{item.time}}</view>
+            <view class="td">{{item.state}}</view>
+        </view>
+    </block>
+</view>
+<view class="pagebox">
+    <view class="first-last" style="color: white;background-color: blue;">首页</view>
+    <view class="angle">
+        <image src="../../img/angle-left.png"></image>
+    </view>
+    <view class="page">1/50</view>
+    <view class="angle">
+        <image src="../../img/angle-right.png"></image>
+    </view>
+    <view class="first-last">尾页</view>
+</view>

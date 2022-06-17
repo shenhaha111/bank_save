@@ -14,6 +14,28 @@ Page({
     onLoad(options) {
 
     },
+    onquery: function () {
+        wx.navigateTo({
+            url: '../query/query',
+        })
+    },
+    onchain: function () {
+        wx.navigateTo({
+            url: '../onChain/onChain',
+        })
+    },
+    onbook: function () {
+        wx.navigateTo({
+            url: '../book/book',
+        })
+    },
+    onfee: function () {
+        wx.navigateTo({
+            url: '../fee/fee',
+        })
+    },
+
+
 
     /**
      * 生命周期函数--监听页面初次渲染完成

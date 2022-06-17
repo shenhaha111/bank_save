@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view class="box1">
+    <view class="item" style="background-color: blue;">
+        <image src="../../img/box.png"></image>
+    </view>
+</view>
+<view class="box2">银行保管箱V1.0</view>
+<view class="box3"> 这是这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍这是我们的详细的介绍</view>

@@ -1,0 +1,23 @@
+<!--pages/bookrecord/bookrecord.wxml-->
+<view class="box">
+    <view class="record">
+        <view class="txt">办理时间</view>
+        <view class="time">2021-06-28 10:00</view>
+    </view>
+    <view class="record">
+        <view class="txt">操作员</view>
+        <view class="person">笑笑</view>
+    </view>
+    <view class="record">
+        <view class="txt">办理业务</view>
+        <view class="business">开箱</view>
+    </view>
+    <view class="record">
+        <view class="txt">预约地点</view>
+        <view class="site">安徽身合肥市高新区创新大道支行</view>
+    </view>
+    <view class="record">
+        <view class="txt">预约时间</view>
+        <view class="time">2021-06-25</view>
+    </view>
+</view>

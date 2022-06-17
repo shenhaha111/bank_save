@@ -1,0 +1,36 @@
+<!--pages/book/book.wxml-->
+<!--pages/groupSport/groupSport.wxml-->
+<view>
+    <view class="headWrap">
+        <view class='date-box'>
+            <view wx:for='{{dateArrs}}' wx:key='index'>
+                <view class='{{dd == item.dateNum ? "nowDay" : ""}}'>
+                    <view class='date-head' bindtap='chooseDate' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}' data-weight="{{item.weight}}">
+                        <view style='font-size:12px;'>{{item.dateNum}}</view>
+                        <view wx:if="{{isToday == item.isToday}}" style='font-size:12px;'>今日</view>
+                        <view wx:else style='font-size:12px;'>{{item.weekday}}</view>
+                    </view>
+                </view>
+            </view>
+            <view style="float:right;margin-right:40px;margin-top:11px;">
+                <image class="icon_date" src="../../img/date.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="listcontent">
+        <view class="contentitem">
+            <image src="../../img/bookimg.png" style="height: 80px;width: 80px; border-radius: 10px;margin-left: 10px;"></image>
+            <view class="information">
+                <view class="title">业务办理</view>
+                <view class="name">笑笑</view>
+                <view class="time">08.30-11.30</view>
+            </view>
+            <view class="btn">
+                <button bindtap="onbtnclick" style="height: 35px;width: 80px;border-radius: 20px;background-color:rgb(248, 249, 250);border: 1px solid blue;float: right;margin-right: 10px;">
+                    <view class="text" style="font-size: 12px;text-align: center;color: blue;">预约</view>
+                </button>
+            </view>
+        </view>
+    </view>
+
+</view>

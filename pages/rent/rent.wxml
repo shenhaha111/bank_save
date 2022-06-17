@@ -1,0 +1,59 @@
+<!--pages/rent/rent.wxml-->
+<view class="tips">
+    <view class="txt">基本信息</view>
+</view>
+<view class="information">
+    <view class="txt">箱子规格</view>
+    <input type="text" placeholder="请输入规格" />
+</view>
+<view class="information">
+    <view class="txt">服务地址</view>
+    <input type="text" placeholder="请输入地址" />
+
+</view>
+<view class="information">
+    <view class="txt">到期时间</view>
+    <input type="text" placeholder="请输入时间" />
+</view>
+<view class="tips">
+</view>
+<view class="information">
+    <view class="txt">绑定账号</view>
+    <input type="text" placeholder="请输入账号" />
+</view>
+<view class="info">
+    <view class="move">
+        <view class="txt1">自动续费</view>
+        <view class="txt2">开启后，到期续费会从绑定账户自动扣款</view>
+    </view>
+    <switch color="#115eeb" style="zoom: 0.7;position: fixed;right: 15px;" />
+</view>
+<view class="tips">
+</view>
+<view class="info">
+    <view class="move">
+        <view class="txt1">授权他人用箱</view>
+        <view class="txt2">开启后，可授权他人开箱，续租，退箱</view>
+    </view>
+    <view class="txt2" bindtap="onadd" style="display: flex;justify-content: center;align-items: center;">
+        <view class="text3">去开启</view>
+        <image src="../../img/angle-right.png"></image>
+    </view>
+</view>
+<view class="tips">
+</view>
+<view class="info">
+    <view class="move">
+        <view class="txt1">设置为默认箱子</view>
+        <view class="txt2">开启后，优先展示此箱</view>
+    </view>
+    <switch color="#115eeb" style="zoom: 0.7;position: fixed;right: 15px;" />
+</view>
+<view class="box">
+    <checkbox-group class="cu-bar" bindchange="checkboxChange">
+        <checkbox name="box_check" style="transform:scale(0.6);" checked="{{checked}}" class="red round"></checkbox>
+    </checkbox-group>
+    <view class="t1" style="font-size: 13px;">查看</view>
+    <view class="t2" style="color: rgb(72, 72, 230);font-size: 13px;">《中国农业银行保管箱租用业务服务协议》</view>
+</view>
+<button bindtap="formSubmit" style="font-weight: 400;color: aliceblue;background-color: blue;width: 200px;border-radius: 20px;margin-top: 50px;">同意协议并确认</button>

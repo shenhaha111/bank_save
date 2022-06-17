@@ -1,9 +1,7 @@
 /* pages/my/my.wxss */
 .container {
     width: 99%;
-    height: 100%;
-    background-color: #F4F4F4;
-    margin-top: -90px;
+    margin-top: -97px;
 
 }
 
@@ -45,7 +43,8 @@
     font-weight: bold;
     line-height: 19px;
     color: #FFFFFF;
-    margin-left: -120px;
+    margin-left: 10px;
+    flex-grow: 1;
 }
 
 text {
@@ -67,10 +66,12 @@ text {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: -17px;
+
 }
 
 .management {
-    width: 68px;
+    width: 80px;
     height: 26px;
     border: 1px solid #FFFFFF;
     opacity: 0.8;
@@ -78,6 +79,9 @@ text {
     text-align: center;
     color: white;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 {
@@ -90,7 +94,7 @@ text {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
-    
+
 }
 
 .item {
@@ -126,26 +130,34 @@ text {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    
-    
+
+
 }
+
 .pic {
     width: 18px;
     height: 18px;
 }
+
+.angle-right {
+    flex-grow: 1;
+}
+
 .angle {
     width: 16px;
     height: 16px;
-    margin-left: 210px;
+    margin: 0 0 0 80%;
 }
+
 .info text {
     font-size: 14px;
-font-family: PingFang SC;
-font-weight: 500;
-line-height: 20px;
-color: #666666;
-margin-left: 10px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 20px;
+    color: #666666;
+    margin-left: 15px;
 }
+
 .info {
     height: 50px;
     display: flex;

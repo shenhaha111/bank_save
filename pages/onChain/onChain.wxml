@@ -1,0 +1,25 @@
+<!--pages/onChain/onChain.wxml-->
+<form bindsubmit="bindFormSubmit">
+    <textarea placeholder="aqds" name="textarea" />
+    <view class="box2">
+        <view class="text">加密秘钥</view>
+        <view class="psw">
+            <view>123</view>
+        </view>
+        <button style="width: 100px;font-size: 12px;height: 30px;text-align: center;border:1px solid #3056d1;color: #3056d1;margin-top: -5px;">显示密文</button>
+    </view>
+    <view class="box3">
+        温馨提示：上链数据仅上链经过随机秘钥加密的密文
+    </view>
+    <view class="box4">
+        <input type="password" placeholder="请输入DID密码" />
+    </view>
+    <button class="btn1" form-type="submit" style="background: #3056d1;margin-top: 20px; height: 42px;border-radius: 27px;opacity: 1;">
+        <text style="font-size: 14px;color: #ffffff;">数据上链</text>
+    </button>
+    <view class="box5">
+        <button class="btn2" style="margin-top: 20px; height: 42px;border-radius: 27px;opacity: 1;" bindtap="onclick">
+            <text style="font-size: 14px;color: #3f70da;">上链记录</text>
+        </button>
+    </view>
+</form>

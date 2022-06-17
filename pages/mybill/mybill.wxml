@@ -1,0 +1,11 @@
+<!--pages/mybill/mybill.wxml-->
+<view class="box">
+    <view class="fee" style="margin: 10px;">
+        <view class="txt" style="margin: 5px;">续费</view>
+        <view class="time" style="margin: 5px;font-size: 12px;">2021-06-28 10:00</view>
+    </view>
+    <view class="bill" style="margin: 10px;">
+        <view class="money" style="margin: 5px;text-align: right">¥1000</view>
+        <view class="move" style="margin: 5px; text-align: right;font-size: 12px;">成功</view>
+    </view>
+</view>

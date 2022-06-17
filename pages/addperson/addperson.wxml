@@ -1,0 +1,66 @@
+<!--pages/addperson/addperson.wxml-->
+<view class="box1">
+    <view class="tips">
+        <view class="txt">证件信息</view>
+    </view>
+    <view class="information">
+        <view class="txt">姓名</view>
+        <input type="text" placeholder="请输入姓名" />
+    </view>
+    <view class="information">
+        <view class="txt">证件类型</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array1}}">{{array1[index]}}</picker>
+        <image src="../../img/angle-right.png"></image>
+    </view>
+    <view class="information">
+        <view class="txt">证件号</view>
+        <input type="text" placeholder="请输入证件号" />
+    </view>
+    <view class="tips">
+        <view class="txt">基本信息</view>
+    </view>
+    <view class="information">
+        <view class="txt">职业</view>
+        <picker value="{{index}}" range="{{array2}}">{{array2[index]}}</picker>
+        <image src="../../img/angle-right.png" bindchange="bindPickerChange"></image>
+    </view>
+    <view class="information">
+        <view class="txt">手机号</view>
+        <input type="text" placeholder="请输入手机号" />
+    </view>
+    <view class="information">
+        <view class="txt">现住址</view>
+        <input type="text" placeholder="请选择" value="{{names}}" type="text" bindchange="mapView" />
+        <image src="../../img/angle-right.png" bindchange="mapView"></image>
+    </view>
+    <view class="information">
+        <view class="txt">详细地址</view>
+        <input type="text" placeholder="请输入街道、小区城乡镇、村" />
+    </view>
+    <view class="information">
+        <view class="txt">门牌号</view>
+        <input type="text" placeholder="请输入楼层、门牌号" />
+    </view>
+    <view class="tips">
+        <view class="txt">授权权限</view>
+    </view>
+    <view class="information">
+        <view class="txt" style="font-weight: 600;">开箱</view>
+        <view class="body-view">
+            <switch color="#115eeb" style="zoom: 0.7;position: fixed;right: 15px;" />
+        </view>
+    </view>
+    <view class="information">
+        <view class="txt" style="font-weight: 600;">退箱</view>
+        <view class="body-view">
+            <switch color="#115eeb" style="zoom: 0.7;position: fixed;right: 15px;" />
+        </view>
+    </view>
+    <view class="information">
+        <view class="txt" style="font-weight: 600;">续费</view>
+        <view class="body-view">
+            <switch color="#115eeb" style="zoom: 0.7;position: fixed;right: 15px;" />
+        </view>
+    </view>
+    <button style="color:white;background-color: blue;margin-top: 30px;width: 200px;border-radius: 20px;">保存</button>
+</view>

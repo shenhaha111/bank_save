@@ -4,8 +4,47 @@ Page({
     /**
      * 页面的初始数据
      */
-    data: {
-
+    data: {},
+    onclick: function () {
+        wx.navigateTo({
+            url: '../box/box',
+        })
+    },
+    onboxfee: function () {
+        wx.navigateTo({
+            url: '../boxfee/boxfee',
+        })
+    },
+    onabout: function () {
+        wx.navigateTo({
+            url: '../about/about',
+        })
+    },
+    onbookclick: function () {
+        wx.navigateTo({
+            url: '../bookrecord/bookrecord',
+        })
+    },
+    onbillclick: function () {
+        wx.navigateTo({
+            url: '../mybill/mybill',
+        })
+    },
+    onboxclick: function () {
+        wx.navigateTo({
+            url: '../boxrecord/boxrecord',
+        })
+    },
+    mapView: function () {
+        const that = this;
+        wx.chooseLocation({
+            success: function (e) {
+                console.log(e.name);
+                that.setData({
+                    names: e.name
+                })
+            },
+        })
     },
 
     /**

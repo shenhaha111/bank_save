@@ -1,8 +1,7 @@
-
-  .container {
-    background-color: #0037E6;
-    height: 100%;
-    width: 100%;
+.container {
+  background-color: #0037E6;
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -95,7 +94,7 @@
   display: flex;
   width: calc(100% - 150px);
   margin-left: 70px;
-  
+
   vertical-align: text-bottom;
 }
 

@@ -1,36 +1,54 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/forget/forget",
     "pages/test/test",
-    
+    "pages/query/query",
+    "pages/onChain/onChain",
+    "pages/chainrecord/chainrecord",
+    "pages/book/book",
+    "pages/fee/fee",
+    "pages/bookrecord/bookrecord",
+    "pages/mybill/mybill",
+    "pages/boxrecord/boxrecord",
     "pages/my/my",
+    "pages/box/box",
+    "pages/rent/rent",
+    "pages/management/management",
+    "pages/openbox/openbox",
+    "pages/changebox/changebox",
+    "pages/addperson/addperson",
+    "pages/edit/edit",
+    "pages/add/add",
+    "pages/about/about",
+    "pages/boxfee/boxfee",
     "pages/logs/logs"
   ],
   "tabBar": {
-    "color":"#27B8B8",
+    "color": "#27B8B8",
     "font-size": "12px",
-    "selectedColor":"#0037E6",
+    "selectedColor": "#0037E6",
     "borderStyle": "white",
-    "backgroundColor": "#FFF", 
+    "backgroundColor": "#FFF",
     "list": [{
-      "pagePath": "pages/test/test",
-      "text": "首页",
-      "iconPath": "img/首页.png",
-      "selectedIconPath": "img/首页.png"
-    },
-    {
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "img/我的.png",
-      "selectedIconPath": "img/我的.png"
-    }
-   ]
+        "pagePath": "pages/test/test",
+        "text": "首页",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/我的.png",
+        "selectedIconPath": "img/我的.png"
+      }
+    ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "银行保管箱",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

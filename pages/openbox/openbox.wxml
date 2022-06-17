@@ -1,0 +1,5 @@
+<!--pages/openbox/openbox.wxml-->
+<view class="pic">
+    <image src="../../img/quxiang.png"></image>
+</view>
+<view class="move">开箱中...</view>

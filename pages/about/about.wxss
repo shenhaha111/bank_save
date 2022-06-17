@@ -1,0 +1,34 @@
+/* pages/about/about.wxss */
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+image {
+    height: 60px;
+    width: 60px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+.box3 {
+    margin: 20px 10px;
+    text-indent: 2em;
+}

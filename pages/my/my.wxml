@@ -4,29 +4,31 @@
         <view class="innerbox">
             <image class="head" src="../../img/moren.png"></image>
             <view class="number">C0012</view>
-            <view class="management">箱体管理</view>
+            <view class="management" bindtap="onclick">箱体管理</view>
         </view>
         <view class="innerbox">
-            <text>今天是箱体伴你的</text>
+            <view class="text"><text>今天是箱体伴你的</text></view>
             <view class="time">第186天</view>
         </view>
         <view class="innerbox">
-            <image class="min" src="../../img/ditu.png"></image>
-            <text>安徽省合肥市高新区</text>
+            <image class="min" src="../../img/ditu.png" bindchange="mapView"></image>
+            <view style="color: white; font-size: small;" bindchange="mapView">
+                <input type="text" placeholder="点击获取地址" value="{{names}}" bindchange="mapView" />
+            </view>
             <image class="min" src="../../img/shijian.png"></image>
-            <text>2022-06-24到期</text>
+            <view style="color: white; font-size: small;">2022-06-24到期</view>
         </view>
     </view>
     <view class="box2">
-        <view class="item">
-            <image src="../../img/yuyue.png"></image>
+        <view class="item" bindtap="onbookclick">
+            <image src="../../img/yuyuerecord.png"></image>
             <text>预约记录</text>
         </view>
-        <view class="item">
+        <view class="item" bindtap="onbillclick">
             <image src="../../img/zhangdan.png"></image>
             <text>我的账单</text>
         </view>
-        <view class="item">
+        <view class="item" bindtap="onboxclick">
             <image src="../../img/xiangzi.png"></image>
             <text>取箱记录</text>
         </view>
@@ -35,12 +37,16 @@
         <view class="info">
             <image class="pic" src="../../img/xiangbao.png"></image>
             <text>箱型费用</text>
-            <image class="angle" src="../../img/angle-right.png"></image>
+            <view class="angle-right">
+                <image class="angle" src="../../img/angle-right.png" bindtap="onboxfee"></image>
+            </view>
         </view>
         <view class="info">
             <image class="pic" src="../../img/guanyu.png"></image>
             <text>关于我们</text>
-            <image class="angle" src="../../img/angle-right.png"></image>
+            <view class="angle-right">
+                <image class="angle" src="../../img/angle-right.png" bindtap="onabout"></image>
+            </view>
         </view>
     </view>
 </view>

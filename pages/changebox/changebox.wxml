@@ -1,0 +1,5 @@
+<!--pages/changebox/changebox.wxml-->
+<view class="pic">
+    <image src="../../img/cunxiang.png"></image>
+</view>
+<view class="move">换箱中...</view>

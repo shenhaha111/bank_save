@@ -1,0 +1,65 @@
+<!--pages/boxfee/boxfee.wxml-->
+<view class="box1">
+    <view class="boxshape">选择箱型（长*宽*高 mm）</view>
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%;color: gray;">
+        <view id="demo1" class="scroll-view-item_H demo-text-1">
+            <view class="smallbox">
+                <image src="../../img/case.png"></image>
+                <view class="number" style="margin: 10px 35%;">小号箱</view>
+                <view class="shape" style="margin: 15px 20px">规格 50*30*60</view>
+                <view class="money" style="margin: 15px 20px">租金 <text style="color: blue;">￥100</text></view>
+            </view>
+        </view>
+        <view id="demo2" class="scroll-view-item_H demo-text-2">
+            <view class="middlebox">
+                <image src="../../img/case.png"></image>
+                <view class="number" style="margin: 10px 35%;">中号箱</view>
+            </view>
+            <view class="shape" style="margin: 15px 20px">规格 50*30*60</view>
+            <view class="money" style="margin: 15px 20px">租金
+                <text style="color: blue;">￥100</text>
+            </view>
+        </view>
+        <view id="demo3" class="scroll-view-item_H demo-text-3">
+            <view class="bigbox">
+                <image src="../../img/case.png"></image>
+                <view class="number" style="margin: 10px 35%;">大号箱</view>
+                <view class="shape" style="margin: 15px 20px">规格 50*30*60</view>
+                <view class="money" style="margin: 15px 20px">租金 <text style="color: blue;">￥100</text></view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="box2">
+        <view class="innerbox1" bindchange="bindPickerChange">
+            <view class="txt">租期</view>
+            <picker class="los" bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="margin-left: 50px;">{{array[index]}}</picker>
+            <image src="../../img/angle-right.png"></image>
+        </view>
+        <view class="innerbox1" bindtap="mapView">
+            <view class="txt">预约站点</view>
+            <view class="los">{{location}}</view>
+            <image src="../../img/angle-right.png" style="display: block;"></image>
+        </view>
+        <view class="innerbox1">
+            <view class="txt">预约时间</view>
+            <picker class="los" mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}"> {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}</picker>
+            <image src="../../img/angle-right.png"></image>
+        </view>
+        <view class="innerbox1">
+            <view class="txt">绑定账号</view>
+            <picker class="los" bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">{{array1[index1]}}</picker>
+            <image src="../../img/angle-right.png"></image>
+        </view>
+        <view class="innerbox2">
+            <checkbox-group class="cu-bar" bindchange="checkboxChange">
+                <checkbox name="box_check" style="transform:scale(0.6);" checked="{{checked}}" class="red round"></checkbox>
+            </checkbox-group>
+            <view class="t1" style="font-size: 13px;">查看</view>
+            <view class="t2" style="color: rgb(72, 72, 230);font-size: 13px;">《中国农业银行保管箱用户服务协议》</view>
+        </view>
+        <view class="btn">
+            <button bindtap="formSubmit" style="color: aliceblue; background-color: rgb(72, 72, 230);font-weight: 400;border-radius: 20px;">同意协议并确认</button>
+        </view>
+    </view>
+
+</view>

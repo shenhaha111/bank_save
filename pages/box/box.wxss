@@ -1,0 +1,115 @@
+/* pages/box/box.wxss */
+.box1 {
+    width: 94%;
+    margin: 15px 3%;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.add-box {
+    color: rgb(214, 214, 9);
+    border: 1px solid rgb(214, 214, 9);
+    border-radius: 10px;
+    font-size: 14px;
+    position: fixed;
+    right: 3%;
+}
+
+.btn-click {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.image-area {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: white;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.image-area image {
+    height: 20px;
+    width: 20px;
+    margin: 7px;
+}
+
+.area-box1 {
+    display: flex;
+    background-color: rgb(31, 31, 128);
+    align-items: center;
+    /* border: 2px solid rgb(238, 231, 231); */
+    border-radius: 15px;
+    color: white;
+}
+
+.area {
+    border: 2px solid rgb(238, 231, 231);
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.area .txt {
+    color: gray;
+    margin: 15px;
+}
+
+.headarea {
+    width: 94%;
+    margin: 15px 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border: 2px solid rgb(238, 231, 231);
+    border-radius: 15px;
+}
+
+.bodyarea {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.bodyarea text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 14px 14px 14px 14px;
+    opacity: 1;
+
+}
+
+.service {
+    font-weight: 800;
+    width: 94%;
+    margin-left: 3%;
+}
+
+.edit {
+    position: fixed;
+    right: 3%;
+    display: flex;
+    width: 50px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+    color: rgb(32, 130, 196);
+    justify-content: center;
+    align-items: center;
+}

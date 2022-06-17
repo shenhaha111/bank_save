@@ -1,0 +1,17 @@
+<!--pages/fee/fee.wxml-->
+<view class="box">
+    <view class="item">
+        <image src="../../img/fee.png"></image>
+        <view class="information">
+            <view class="title">A0121</view>
+            <view class="name">续租</view>
+        </view>
+        <view class="money">￥200</view>
+        <view class="btn">
+            <button bindtap="onbtnclick" style="height: 35px;width: 80px;border-radius: 20px;background-color:#115eeb;border: 1px solid white;float: right;margin-right: 10px;">
+                <view class="text" style="font-size: 12px;text-align: center;color: white;">预约</view>
+            </button>
+        </view>
+    </view>
+
+</view>

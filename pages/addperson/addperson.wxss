@@ -1,0 +1,26 @@
+/* pages/addperson/addperson.wxss */
+image {
+    width: 15px;
+    height: 15px;
+    opacity: .7;
+    position: fixed;
+    right: 15px;
+}
+
+.tips {
+    background-color: rgb(236, 231, 231);
+    color: gray;
+    padding: 6px 0;
+}
+
+.txt {
+    margin-left: 15px;
+    display: block;
+    width: 90px;
+}
+
+.information {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(252, 248, 248);
+}
